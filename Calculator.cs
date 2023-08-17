@@ -6,7 +6,7 @@
             a * b;
 
         public static double Div(double a, double b) =>
-           (double)a / b;
+           a / b;
 
         public static double Add(double a, double b) =>
             a + b;

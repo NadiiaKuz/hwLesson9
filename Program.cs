@@ -25,10 +25,10 @@
 
                 Calculate calculate = operation switch
                 {
-                    '+' => (a, b) => Calculator.Add(a, b),
-                    '-' => (a, b) => Calculator.Sub(a, b),
-                    '*' => (a, b) => Calculator.Mul(a, b),
-                    '/' => (a, b) => Calculator.Div(a, b),
+                    '+' => Calculator.Add,
+                    '-' => Calculator.Sub,
+                    '*' => Calculator.Mul,
+                    '/' => Calculator.Div,
                 };
 
                 Console.WriteLine($"{a} {operation} {b} = {calculate(a, b)}");
